@@ -1,0 +1,53 @@
+/* --------------------------- *\
+		CONOCIMIENTOS
+\* --------------------------- */
+
+.conocimientos {
+	background-color: var(--color-white-fondo);
+	position: relative;
+	z-index: 200;
+}
+
+	/* & .container-adorno (generales.css) */
+
+	.conocimientos-grilla {
+		padding-top: var(--espaciado-muy-alto);
+		margin: 0 var(--espaciado-muy-alto);
+
+		display: grid;
+		grid-template-columns: 2fr 1fr 2fr;
+	}
+
+		.conocimientos-contenedor {
+			display: grid;
+			grid-template-rows: repeat(6, 1fr);
+
+			& div {
+				display: flex;
+				justify-content: center;
+
+				& p {
+					height: fit-content;
+					border-radius: 1em;
+					
+					margin: 0 auto;
+					padding: var(--espaciado-muy-leve) var(--espaciado-normal);
+
+					color: var(--color-white);
+					background-color: var(--color-secundario);
+
+					font-size: 0.8em;
+					font-weight: 300;
+				}
+			}
+		}
+
+		.conocimientos-leonidas-container {
+			width: 100%;
+			margin: 0;
+		}
+
+			.conocimientos-leonidas {
+				width: 100%;
+				vertical-align: top;
+			}

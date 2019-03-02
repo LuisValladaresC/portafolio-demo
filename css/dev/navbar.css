@@ -1,0 +1,63 @@
+/* --------------------------- *\
+			NAVBAR
+\* --------------------------- */
+
+.navbar {
+	padding: 0 var(--espaciado-normal);
+	box-sizing: border-box;
+	color: var(--color-white);
+	background-color: var(--color-principal);
+	box-shadow: var(--box-shadow);
+
+	font-size: 1.05em;
+	letter-spacing: 0.05em;
+
+	position: relative;
+	z-index: 600;
+
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 2em;
+}
+
+	.navbar-logo {
+		margin: 0.9em 0;
+		display: flex;
+		align-items: center;
+	}
+
+		.navbar-logo-imagen {
+			height: var(--espaciado-muy-alto);
+		}
+
+		.navbar-logo-nombre {
+			margin: 0;
+			margin-left: .5em;
+		}
+
+	.navbar-menu {
+		height: inherit;
+
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+		.navbar-menu-link {
+			padding: .5em;
+			margin-right: 1em;
+			color: var(--color-white);
+			text-decoration: none;
+			transition: 150ms;
+
+			&:hover {
+				transform: scale(.95);
+			}
+			
+			&:last-of-type {
+				margin: 0;
+				margin-left: .5em;
+				border-radius: var(--border-radius);
+				border: 1px solid var(--color-white);
+			}
+		}

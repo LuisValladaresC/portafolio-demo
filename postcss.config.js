@@ -7,6 +7,8 @@ module.exports = {
 			},
 			customPropierties: false,
 		}),
-		require('css-mqpacker'),
+		require('cssnano')({
+            preset: 'default',
+        }),
 	]
 }

@@ -1,0 +1,49 @@
+/* --------------------------- *\
+			HERO
+\* --------------------------- */
+
+.hero {
+	height: 300px;
+	background-color: var(--color-principal);
+
+	position: relative;
+	z-index: 500;
+
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+}
+
+	.hero-titulo {
+		color: var(--color-white);
+		margin: 0;
+		margin-left: var(--espaciado-normal);
+
+		font-size: 2.4em;
+		line-height: 1.6em;
+		letter-spacing: 0.02em;
+
+		& span {
+			color: var(--color-secundario);
+		}
+	}
+
+	.hero-imagen-container {
+		width: 100%;
+		height: inherit;
+		margin: 0;
+		
+		position: relative;
+	}
+
+		.hero-imagen {
+			width: inherit;
+			height: inherit;
+			object-fit: cover;
+		}
+		
+		.hero-border-imagen {
+			border-top: 300px solid var(--color-principal);
+			border-right: 25px solid transparent;
+			position: absolute;
+		}

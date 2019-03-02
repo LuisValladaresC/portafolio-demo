@@ -1,0 +1,27 @@
+/* --------------------------- *\
+			VARIABLES
+\* --------------------------- */
+
+:root {
+	--color-fondo: #0f0f0f;
+	--color-principal: #1c2227;
+	--color-secundario: #0074f7;
+
+	--color-black: #000000;
+	--color-gray: #2c2c2c;
+	--color-lightgray: #848484;
+
+	--color-white: #ffffff;
+	--color-white-fondo: #f9f9f9;
+
+	--espaciado-muy-leve: calc(var(--espaciado-normal)/4); /* 5px */
+	--espaciado-leve: calc(var(--espaciado-normal)/2);	/* 10px */
+	--espaciado-normal: 1.25rem; /* 20px */
+	--espaciado-alto: calc(var(--espaciado-normal)*1.5); /* 30px */
+	--espaciado-muy-alto: calc(var(--espaciado-normal)*2); /* 40px */
+
+	--espaciado-titulo: calc(var(--espaciado-normal)*3.5); /* 70px */
+
+	--border-radius: var(--espaciado-muy-leve);
+	--box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
