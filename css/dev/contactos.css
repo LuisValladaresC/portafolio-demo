@@ -1,0 +1,79 @@
+/* --------------------------- *\
+			CONTACTOS
+\* --------------------------- */
+
+.contactos {
+	background-color: var(--color-secundario);
+	position: relative;
+	z-index: 100;
+
+	& .container-adorno { 
+		height: var(--espaciado-titulo);
+		background-color: var(--color-white);
+		/* propiedades restantes en generales.css */
+	}
+
+	& .titulo-adorno {
+		background-color: var(--color-white);
+	}
+	/* propiedades restantes en generales.css */
+	& .titulo-texto {
+		color: var(--color-white);
+		padding-bottom: var(--espaciado-normal);
+	}
+}
+
+	.contactos-grilla {
+		display: grid;
+		grid-auto-flow: column;
+	}
+
+			.formulario-input {
+				width: 50%;
+				height: var(--espaciado-muy-alto);
+				font-size: 1.1em;
+				display: block;
+
+				padding: 0 var(--espaciado-leve);
+				margin-left: var(--espaciado-titulo);
+				margin-bottom: var(--espaciado-normal);
+
+				border: 1px solid var(--color-lightgray);
+				border-radius: var(--border-radius);
+				box-sizing: border-box;
+			}
+
+			.formulario-boton{
+				width: 20%;
+				height: var(--espaciado-muy-alto);
+				cursor: pointer;
+
+				margin-left: var(--espaciado-titulo);
+				margin-bottom: var(--espaciado-muy-alto);
+
+				border-radius: var(--border-radius);
+				border: 1px solid var(--color-white);
+
+				color: var(--color-white);
+				background-color: transparent;
+				
+				font-size: 1.2em;
+				letter-spacing: 0.05em;
+			}
+
+		.contactos-redes {
+			display: grid;
+			grid-template-columns: repeat(4, auto);
+			justify-content: space-evenly;
+			align-items: center;
+		}
+
+			.icono {
+				color: var(--color-white);
+				font-size: 4em;
+				transition: 150ms;
+
+				&:hover {
+					transform: scale(.95);
+				}
+			}

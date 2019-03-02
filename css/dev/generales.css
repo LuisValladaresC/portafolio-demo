@@ -1,0 +1,59 @@
+/* --------------------------- *\
+			GENERALES
+\* --------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	background-color: var(--color-fondo);
+}
+
+h1, h2, h3 {
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
+}
+
+.container {
+	max-width: 1024px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+	.container-adorno {
+		width: var(--espaciado-normal);
+		height: 100%;
+		background-color: var(--color-secundario);
+		position: absolute;
+	}
+
+	.container-titulo {
+		position: relative;
+	}
+		
+		.titulo-adorno {
+			width: var(--espaciado-muy-alto);
+			height: var(--espaciado-muy-alto);
+			border-radius: 0 50% 50% 0;
+			background-color: var(--color-secundario);
+
+			position: absolute;
+			top: var(--espaciado-alto);
+			left: var(--espaciado-muy-leve);
+		}
+		
+		.titulo-texto {
+			margin: 0;
+			margin-left: var(--espaciado-titulo);
+			padding: var(--espaciado-muy-alto) 0;
+			color: var(--color-secundario);
+
+			font-size: 1.3em;
+			font-weight: bold;
+			text-transform: uppercase;
+		}

@@ -1,0 +1,89 @@
+/* --------------------------- *\
+		EXPERIENCIAS
+\* --------------------------- */
+
+.experiencias {
+	background-color: var(--color-white-fondo);
+	position: relative;
+	z-index: 300;
+}
+
+	/* & .container-adorno (generales.css) */
+	/* & .container-titulo .titulo-adorno, & .container-titulo .titulo-texto (generales.css) */
+
+	.experiencias-galeria {
+		margin: 0 var(--espaciado-muy-alto);
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: var(--espaciado-normal);
+	}
+
+		.galeria-experiencia {
+			background-color: var(--color-white);
+			border-radius: var(--border-radius);
+			box-shadow: var(--box-shadow);
+			overflow: hidden;
+		}
+
+			.experiencia-multimedia-container {
+				margin: 0;
+			}
+				
+				.experiencia-multimedia {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+
+			.experiencia-contenido {
+				margin: 0 var(--espaciado-alto);
+				padding: var(--espaciado-alto) var(--espaciado-normal);
+				border-radius: var(--border-radius);
+				background-color: var(--color-white-fondo);
+
+				position: relative;
+				bottom: var(--espaciado-alto);
+
+				display: grid;
+				justify-items: center;
+			}
+
+				.contenido-titulo {
+					margin: 0;
+					margin-bottom: 1em;
+
+					font-size: 1.6em;
+					text-align: center;
+					
+					opacity: 0.8;
+				}
+
+				.contenido-descripcion {
+					margin: 0;
+					margin-bottom: 1.5em;
+					color: var(--color-lightgray);
+
+					font-size: 1.1em;
+					font-weight: 400;
+					letter-spacing: 0.02em;
+					line-height: 1.5em;
+				}
+
+				.contenido-link {
+					width: 70%;
+					margin: 0 15%;
+					height: var(--espaciado-muy-alto);
+					color: var(--color-secundario);
+					cursor: pointer;
+
+					border-radius: var(--border-radius);
+					border: 1px solid var(--color-secundario);
+
+					font-size: 1.2em;
+					letter-spacing: 0.02em;
+
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
