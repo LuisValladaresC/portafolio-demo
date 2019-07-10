@@ -8,9 +8,6 @@
 	z-index: 400;
 }
 
-	/* & .container-adorno (generales.css) */
-	/* & .container-titulo .titulo-adorno, & .container-titulo .titulo-texto (generales.css) */
-
 	.portafolio-proyecto {
 		margin: 0 var(--espaciado-muy-alto) var(--espaciado-normal);
 		box-shadow: var(--box-shadow);
@@ -18,10 +15,9 @@
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-
-		&:last-of-type {
-			margin-bottom: 0;
-		}
+	}
+	.portafolio-proyecto:last-of-type {
+		margin-bottom: 0;
 	}
 
 		.proyecto-informacion {
@@ -47,9 +43,10 @@
 				font-size: 0.9em;
 				font-weight: 500;
 				
-				& span, & a {
-					color: var(--color-lightgray)
-				}
+			}
+			.informacion-fecha span,
+			.informacion-link a {
+				color: var(--color-lightgray)
 			}
 
 			.informacion-descripcion {

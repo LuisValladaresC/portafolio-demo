@@ -49,15 +49,13 @@
 			color: var(--color-white);
 			text-decoration: none;
 			transition: 150ms;
-
-			&:hover {
-				transform: scale(.95);
-			}
-			
-			&:last-of-type {
-				margin: 0;
-				margin-left: .5em;
-				border-radius: var(--border-radius);
-				border: 1px solid var(--color-white);
-			}
+		}
+		.navbar-menu-link:hover {
+			transform: scale(.95);
+		}
+		.navbar-menu-link:last-of-type {
+			margin: 0;
+			margin-left: .5em;
+			border-radius: var(--border-radius);
+			border: 1px solid var(--color-white);
 		}

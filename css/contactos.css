@@ -6,22 +6,24 @@
 	background-color: var(--color-secundario);
 	position: relative;
 	z-index: 100;
+}
 
-	& .container-adorno { 
+	.contactos .container-adorno { 
 		height: var(--espaciado-titulo);
 		background-color: var(--color-white);
 		/* propiedades restantes en generales.css */
 	}
 
-	& .titulo-adorno {
+	.contactos .titulo-adorno {
 		background-color: var(--color-white);
+		/* propiedades restantes en generales.css */
 	}
-	/* propiedades restantes en generales.css */
-	& .titulo-texto {
+
+	.contactos .titulo-texto {
 		color: var(--color-white);
 		padding-bottom: var(--espaciado-normal);
+		/* propiedades restantes en generales.css */
 	}
-}
 
 	.contactos-grilla {
 		display: grid;
@@ -72,8 +74,7 @@
 				color: var(--color-white);
 				font-size: 4em;
 				transition: 150ms;
-
-				&:hover {
-					transform: scale(.95);
-				}
+			}
+			.icono:hover {
+				transform: scale(.95);
 			}

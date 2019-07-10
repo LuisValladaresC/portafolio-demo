@@ -8,10 +8,10 @@
     .hero {
         height: 250px;
 		
-        & .hero-border-imagen {
-			border-top-width: 250px;
-		}
     }	
+        .hero-border-imagen {
+            border-top-width: 250px;
+        }
 }
 
 @media (max-width: 650px) {
@@ -21,38 +21,37 @@
 		background-image: url("../images/hero.png");
         background-repeat: no-repeat;
         background-size: cover;
-        
-        & .hero-imagen-container {
+    }
+    
+        .hero-imagen-container {
             display: none;
         }
-	}
 
     /* ---- NAVBAR ---- */
     .navbar-menu-link {
         margin-right: .4em;
-        
-        &:last-of-type {
-            margin-left: .2em;
-        }
+    }
+    .navbar-menu-link:last-of-type {
+        margin-left: .2em;
     }
 
     /* ---- PORTAFOLIO ---- */
 	.portafolio-proyecto {
 		grid-template-columns: 1fr;
-		
-        & .proyecto-imagen-container {
-			padding: 0 20%;
-		}
 	}
+    
+        .proyecto-imagen-container {
+            padding: 0 20%;
+        }
 
     /* ---- EXPERIENCIA ---- */
 	.experiencias-galeria {
 		grid-template-columns: 1fr;
-
-            & .galeria-experiencia:nth-of-type(1n+3) {
-                display: none;
-            }
-	}
+    }
+    
+        .galeria-experiencia:nth-of-type(1n+3) {
+            display: none;
+        }
 }
 
 @media (max-width: 550px) {

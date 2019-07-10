@@ -8,9 +8,6 @@
 	z-index: 300;
 }
 
-	/* & .container-adorno (generales.css) */
-	/* & .container-titulo .titulo-adorno, & .container-titulo .titulo-texto (generales.css) */
-
 	.experiencias-galeria {
 		margin: 0 var(--espaciado-muy-alto);
 

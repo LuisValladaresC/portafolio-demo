@@ -1,0 +1,11 @@
+@import "./normalize.css";
+@import "./variables.css";
+@import "./generales.css";
+@import "./navbar.css";
+@import "./hero.css";
+@import "./portafolio.css";
+@import "./experiencias.css";
+@import "./conocimientos.css";
+@import "./contactos.css";
+@import "./footer.css";
+@import "./mobile.css";
